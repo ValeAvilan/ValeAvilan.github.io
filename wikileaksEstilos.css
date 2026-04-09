@@ -1,0 +1,218 @@
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+/*header principal */
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    background-color: white;
+}
+
+.izq{
+    display: flex; /*pegar h1 y menu para que esten en una sola linea*/
+    align-items: center;
+    align-items: baseline;
+    gap: 40px;
+}
+
+.header h1{
+    margin: 0;
+    font-size: 40px;
+}
+
+/*leaks, news... */
+.menu{
+    display: flex; /*ponerlos en una sola fila */
+    gap: 25px;/*espacio entre cada palabra */
+}
+
+.menu p{
+    margin: 0;
+    font-size: 17px;
+}
+
+.botones{
+    display: flex; /*ponerlos en una sola fila */
+    gap: 8px; /*espacio entre cada boton */
+}
+
+.keywords{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin: 35px;
+}
+
+/* botonoes */
+.donate{
+    background-color: red;
+    font-size: 20px;
+    color: white;
+    border: none;
+    padding: 16px;
+}
+
+.submit{
+    background-color: gray;
+    font-size: 20px;
+    color: white;
+    border: none;
+    padding: 16px;
+}
+
+/* centrar el rectangulo */
+.busqueda{
+    display: flex;
+    justify-content: center;
+    margin: 30px; /*separa del header*/
+}
+
+/* acomodar texto, bordes, largo y espacio adentro de rectangulo de busqueda */
+.busqueda input{
+    width: 650px; /*cuadro más largo*/
+    padding: 15px; /*agranda espacio interno*/
+    font-size: 18px;
+    border: 1px solid gray;
+}
+
+.f{
+    width: 1100px;   /* la seccion de featured va a medir 1100px */
+    margin: 60px auto; /* el auto calcula espacio sobrante y lo reparte en izquierda y derecha */ 
+    padding-top: 1px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+.featured h1{
+    margin: 0;
+    font-size: 35px;
+}
+
+
+/* primera fila de noticias */
+.featured{
+    width: 1100px;   /* la seccion de featured va a medir 1100px */
+    margin: 10px auto 30px auto; /* el auto calcula espacio sobrante y lo reparte en izquierda y derecha */ 
+}
+
+.primera{
+    display: flex;
+    gap: 20px; /*cada elemento adentro de primera tiene un espacio */
+    margin-top: 20px;
+    align-items: stretch;
+}
+
+.cardG{
+    display: flex;
+    flex-direction: column;
+    /* poner borde, espacio adentro con padding y color de fondo gris */
+    border: 1px solid lightgray; 
+    padding: 12px;
+    background-color: #f5f5f5;
+}
+
+/*centrar imagenes*/
+.cardG img{
+    align-self: center;
+}
+
+.cardG h3{
+    margin: 10px;
+    font-size: 20px;
+}
+
+.cardG p{
+    margin: 5px;
+}
+
+
+
+.cardC{
+    display: flex;
+    flex-direction: column;
+    /* poner borde, espacio adentro con padding y color de fondo gris */
+    border: 1px solid lightgray; 
+    padding: 12px;
+    background-color: #f5f5f5;
+    width: 20%;
+    min-height: 320px;
+}
+
+/*centrar imagenes*/
+.cardC img{
+    align-self: center;
+    height: 170px;  /* altura parecida */
+    object-fit: contain; /* ajustar imagen */
+}
+
+.cardC h3{
+    margin: 10px;
+    font-size: 20px;
+}
+
+.cardC p{
+    margin: 5px;
+}
+
+.fecha{
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: right;
+    align-content: end;
+}
+
+/*  */
+.segunda{
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+    align-items: stretch;
+}
+/* pie de pagina */ 
+.pie{
+    width: 100%; /*ancho total del footer*/
+    margin: 0;  /*no deja espacios  */
+}
+
+.gris{
+    background-color: #dddddd; /* pinta gris el cuadro */
+    padding: 100px 25px; /* espacio interno */
+}
+
+.cuadro{
+    display: flex; /* 5 bloques en fila y mantiene centrado */
+    justify-content: space-around; /*espacio entre ellos  */
+    width: 1000px;   /* la seccion de featured va a medir 1100px */
+    margin: 0px auto; /* los elementos empiezan arriba */
+    align-items: flex-start; /* todos empiezan arriba */
+    gap: 20px; /*espacio entre cada bloque de fuentes*/
+}
+
+.fuentes{
+    display: flex;
+    flex-direction: column; /*poner texto abajo de la imagen*/
+    width: 19%;
+    align-items: center;
+}
+/*  */
+.fuentes img{
+    margin-bottom: 12px;
+    align-self: center; /* cada imagen en el centri de su propio bloque */
+
+    /* simetria para alinear tamaño */
+    height: 100px;  /* altura parecida */
+    object-fit: contain; /* ajustar imagen */
+}
+
+.fuentes p{
+    margin: 0; /*quita todos los espacios de la etiqueta p*/
+    font-size: 14px;
+    line-height: 1.4;
+    text-align: left;
+}
+

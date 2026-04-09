@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+    <title>Página más fea</title>
+    <link rel="stylesheet" href="estilosFea.css">
+
+    <header>
+        <h1>Página más fea</h1>
+    </header>
+
+    <body>
+        <!-- HTML -->
+        <section>
+            <h2 class="titulo">HTML</h2>
+        <p class="sub">Introducción</p><br>
+        <h3>1. ¿Qué es HTML?</h3>
+        <p>HTML (HyperText Markup Language) es el lenguaje que se usa para crear páginas web.
+        <br>No es un lenguaje de programación, es un lenguaje de estructura.<br>
+        Es el estandar para estructurar y crear contenido de las páginas web
+        </p>
+
+        <h3>2. Etiquetas HEAD y BODY</h3>
+        <p>HEAD es la parte invisible de la página.<br>
+        CONTIENE:<br>
+        <ul>
+            <li>título de la pestaña</li>
+            <li>configuración</li>
+            <li>enlaces a CSS</li>
+        </ul>
+        </p>
+        <p>BODY es todo lo que el usuario ve<br>
+            Se usan etiquetas detro para darle formato
+        </p><br>
+
+        <p class="sub">Basic Tags</p><br>
+        <h3>1. Explicar section, article, aside, header, footer tag</h3>
+        <p>HEADER: Es la parte de arriba de la página.<br>
+        FOOTER: Es la parte de abajo de la página. ej: derechos reservados<br>
+        SECTION: Divide la página en secciones. ej: noticias<br>
+        ARTICLE: Es contenido independiente. ej: un post o una noticia<br>
+        ASIDE: Contenido secundario (como auncios o información extra)<br><br>
+        <img src="https://keepcoding.io/wp-content/uploads/2022/05/Secciones-de-una-pagina-web-en-html.jpg" alt="" width="300" height="270">
+        </p>
+
+        <h3> 2. Unordered List (se usa ul)</h3><br>
+        <ul>
+            <li>Manzana</li>
+            <li>Uva</li>
+            <li>Fresa</li>
+        </ul>
+<br>
+        <h3> 3. Ordered List (se usa ol)</h3><br>
+        <ol>
+            <li>Primero</li>
+            <li>Segundo</li>
+            <li>Tercero</li>
+        </ol><br>
+        </section>
+
+        <h3> 4. Tabla</h3><br>
+        <div class="tabla">
+        <table>
+            <tr>
+                <th>Nombre</th>
+                <th>Matrícula</th>
+                <th>Celular</th>
+            </tr>
+            <tr>
+                <td>Valeria</td>
+                <td>A01726392</td>
+                <td>3318274692</td>
+            </tr>
+            <tr>
+                <td>Vanessa</td>
+                <td>A01672942</td>
+                <td>3391753091</td>
+            </tr>
+        </table>
+        </div>
+        <p>ETIQUETAS</p>
+        <ul class="pie">
+            <li>TABLE: tabla</li>
+            <li>TR: fila</li>
+            <li>TH: encabezado</li>
+            <li>TD: dato</li>
+        </ul>
+        <br><br>
+
+        <!-- CSS -->
+        <section>
+            <h2 class="titulo">CSS</h2>
+            <p class="sub">Introducción</p><br>
+            <h3>1. ¿Qué es CSS?</h3>
+            <p>CSS (Cascading Style Sheets) es el lenguaje que se usa para dar estilo a una página web.
+                <ul>
+                    <li>HTML es la estructura (este es el título)</li>
+                    <li>CSS es el diseño (el título es rojo, grande y centrado)</li>
+                </ul>
+            </p>
+            <h3>2. ¿Para qué sirve CSS?</h3>
+            <p>Sirve para:
+                <ul>
+                    <li>Cambiar colores</li>
+                    <li>Cambiar tamaños de letra</li>
+                    <li>Acomodar elementos</li>
+                    <li>Hacer la página responsive (que se vea bien en celular)</li>
+                    <li>Hacer la página más bonita</li>
+                </ul>
+            </p>
+            <h3>3. ¿Cómo aplicar CSS a HTML?</h3><br>
+            <ol>
+                <li>INLINE: se escribe dentro de la etiqueta HTML:  
+                <br>-No se recomienda -> se usa para cosas rápidas
+                <h4 style="color: red;">ejemplo de INLINE</h4>
+                </li>
+                <li>INTERNAL: se pone dentro del HTML. Se pone en el head. <br>-Mejor en INLINE -> No se recomienda para proyectos grandes
+                    <head>
+                    <style>
+                        h1 {
+                        color: blue;
+                        }
+                    </style>
+                    </head>
+                </li>
+                <br>
+
+                <li>EXTERNAL: se escribe en un archivo separado, creando un .css y conectándolo al archivo HTML <br>Es la mejor forma y la que se usa en proyectos reales
+                    <head>
+                        <link rel="stylesheet" href="styles.css">
+                    </head>
+                </li>
+            </ol>
+        <br>
+        <p class="sub">Conceptos Importantes</p><br>
+        <h3>a. ¿Qué es un SELECTOR?</h3>
+        <p style="color: blue;">Es lo que indica a qué elemento le quiero aplicar el estilo (este es un ejemplo en el que se aplica estilo al elemento p (afecta a todos los párrafos en el archivo .css))</p>
+        <h3>b. ¿Qué es una REGLA CSS?</h3>
+        <p>Es todo el bloque de estilo <br> Se compone de:<ul><li>Selector → p</li> <li>Propiedades → color, font-size</li><li>Valores → red, 20px</li></ul> </p>
+        <p class="comen">IMAGEN</p>
+        
+        <div class="contenedor">
+            <img src="img1.png" alt="" width="450" height="300" >
+        </div>
+        
+        <p class="link">32 levels of https://flukeout.github.io/</p> 
+
+        <p class="sub">Basic CSS</p><br>
+        <h3 class="importante">Explicación:</h3><br>
+        <h3>Tag Selector</h3><br>
+        <p>Selecciona todas las etiquetas HTML de un tipo. (ejemplo: p)</p><br>
+
+        <h3>Class Selector</h3>
+        <p>Selecciona elementos de una clase específica. (ejemplo: .titulo)</p>
+
+        <h3>Tag and Class Selector</h3>
+        <p>Selecciona una etiqueta específica con una clase. (ejemplo: p.importante -> solo afecta a la etiqueta p con clase importante)</p>
+
+        <h3>Id Selector</h3>
+        <p>Selecciona un elemento con ID ÚNICO (solo hay uno en toda la página/no se repite). (ejemplo: id="principal")</p>
+
+        <h3>¿Qué es una CLASS y que es ID?</h3>
+        <p>CLASS: se puede repetir. Es para estilos generales. <br>Por ejemplo: puede haber una clase subtitulos y aplicar a varios textos para que tengan el mismo estilo</p>
+        <br>
+        <p>ID: Es único. Se usa para darle estílo a algo específico. <br>Por ejemplo: id="titulo", si solo hay uno</p>
+       
+        <h3 class="importante">Relación con CSS:</h3>
+        <p>CSS usa:</p>
+            <ul>
+                <li>. para clases</li>
+                <li># para id</li>
+            </ul>
+        <br>
+        <h3>CSS BOX MODEL</h3>
+        <p>Todo en HTML es una caja:</p>
+      
+        <img src="https://www.oscarblancarteblog.com/wp-content/uploads/2017/10/MoxModel-secciones.png" alt="" width="400" height="300">
+        
+        <ul class="pie">
+            <li>content → contenido (texto)</li>
+            <li>padding → espacio interno</li>
+            <li>border → borde</li>
+            <li>margin → espacio externo</li>
+        </ul>
+        <div class="ej">EJEMPLO</div>
+        <br>
+        <h3>Media Queries</h3>
+        <p>Sirven para que la página cambie según el dispositivo.<br>Sirve para hacer páginas responsive, adpatar a:</p>
+        <ul>
+            <li>celular</li>
+            <li>tablet</li>
+            <li>computadora</li>
+        </ul>
+        <br>
+        <p class="sub">Layout CSS</p><br>
+        <h3>1. display:grid</h3>
+        <p>Sirve para organizar elementos en filas y columnas (como una tabla, pero más flexible). <br>Grid estructura en dos dimensiones (filas y columnas)<br>ejemplo:</p>
+        <div class="container">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+        </div>
+        <ul class="pie"><li>crea tres columnas iguales y acomoda los objetos automáticamente</li></ul>
+        <br>
+        <h3>2. display: flex</h3>
+        <p>Sive para organizar elementos en una sola dirección. Flex es una dimensión (puede ser fila o columna)<br>ejemplo:</p>
+        <div class="cont">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+        </div>
+        <p class="comen">IMAGEN</p>
+        <div class="contenedor">
+            <img src="img2.png" alt="" width="440" height="300">
+        </div>
+        <p class="link"> https://flexboxfroggy.com/</p>
+    
+    
+    </section>
+
+    </body>
+
+
+</html>
