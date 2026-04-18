@@ -1,7 +1,7 @@
 import http from "http";
 import axios from "axios";
 
-const API_KEY = "live_N6PU3nT1P3c1BMtyfaPQEQnADXhCPGyqIXyAHz5ZMMDf551IafVfW9eTVwTEtq1g";
+const API_KEY = "";
 
 const servidor = http.createServer(async (req, res) => {
   console.log("ALGUIEN ENVIO UNA SOLICITUD");
