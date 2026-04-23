@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Score de Crédito</title>
+</head>
+<body>
+  <h1>Score de Crédito</h1>
+  <button onclick="verScore()">Ver score</button>
+
+  <table border="1" cellpadding="8" id="tablaScore">
+    <thead>
+      <tr>
+        <th>Usuario</th>
+        <th>Score</th>
+        <th>Nivel</th>
+        <th>Última Actualización</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <script>
+    async function verScore() {
+      const res = await fetch('/api/score-credito');
+      const scores = await res.json();
+
+      const tbody = document.querySelector('#tablaScore tbody');
+      tbody.innerHTML = '';
+
+      scores.forEach(score => {
+        const fila = document.createElement('tr');
+        fila.innerHTML = `
+          <td>${score.usuario}</td>
+          <td>${score.score}</td>
+          <td>${score.nivel}</td>
+          <td>${score.ultima_actualizacion}</td>
+        `;
+        tbody.appendChild(fila);
+      });
+    }
+  </script>
+</body>
+</html>

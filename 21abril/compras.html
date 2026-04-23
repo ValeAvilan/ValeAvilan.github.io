@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Compras</title>
+</head>
+<body>
+  <h1>Mis Compras</h1>
+  <button onclick="verCompras()">Ver compras</button>
+
+  <table border="1" cellpadding="8" id="tablaCompras">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Usuario</th>
+        <th>Comercio</th>
+        <th>Monto</th>
+        <th>Cuotas</th>
+        <th>Fecha</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <script>
+    async function verCompras() {
+      const res = await fetch('/api/compras');
+      const compras = await res.json();
+
+      const tbody = document.querySelector('#tablaCompras tbody');
+      tbody.innerHTML = '';
+
+      compras.forEach(compra => {
+        const fila = document.createElement('tr');
+        fila.innerHTML = `
+          <td>${compra.id}</td>
+          <td>${compra.usuario}</td>
+          <td>${compra.comercio}</td>
+          <td>$${compra.monto}</td>
+          <td>${compra.cuotas}</td>
+          <td>${compra.fecha}</td>
+        `;
+        tbody.appendChild(fila);
+      });
+    }
+  </script>
+</body>
+</html>
