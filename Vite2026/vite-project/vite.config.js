@@ -1,12 +1,7 @@
 import { defineConfig } from 'vite'
 import { svelte } from '@sveltejs/vite-plugin-svelte'
 
-// https://vite.dev/config/
 export default defineConfig({
-  base:'/vite-app/',
-  build:{
-    outDir:'../../vite-app',
-    emptyOutDir:true,
-  },
+  base: '/Vite2026/vite-project/dist/',
   plugins: [svelte()],
 })
